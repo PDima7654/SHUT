@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Placeholder</title>
+
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+    <script src = "form.js"></script>
+</head>
+<h1>Sign Up || Log In</h1>
+
+<body>
+    <input type ="email" id="email" placeholder="email">  
+    <br></br>
+    <input type = "password" id = "password" placeholder="password">
+    <br></br>
+<button onclick="signUp()" id="signUp">Sign Up</button>
+<button onclick="signIn()" id="signIn">Sign In</button>
+<button  id = "switch">Next Page</button>
+
+<script type = "text/javascript">
+    document.getElementById("switch").onclick=function(){
+        location.href = "information.html";
+    };
+</script>
+
+
+</body>
+</html>
